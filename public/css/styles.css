@@ -6,7 +6,6 @@ body {
     background-color: lightgoldenrodyellow;
 }
 
-<<<<<<< HEAD
 main{
     text-align: center;
     width: 90%;
@@ -23,19 +22,3 @@ article{
 }
 
 
-=======
-.features_footer {
-    text-align: center;
-    background-color: white;
-}
-
-.features_footer .fas {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: blue;
-}
-
-.features_footer h2 {
-    color: gray;
-}
->>>>>>> d90dedfc2447dee1c7c87c0eb04ed6d067bc40b7
