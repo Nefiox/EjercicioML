@@ -3,7 +3,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: lightgoldenrodyellow;
+    background-color: #ebebeb;;
 }
 /* -------- ESTILOS HEADER --------*/
 header {
@@ -52,8 +52,13 @@ main {
     width: 90%;
 }
 
-article{
+.product_card {
     margin-bottom: 10px;
+    background-color: white;
+    text-align: start;
+}
+.product_card img {
+    width: 100%;
 }
 
 .d-articulo{
