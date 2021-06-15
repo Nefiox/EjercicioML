@@ -5,13 +5,53 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #EAC926;
 }
+/* -------- ESTILOS HEADER --------*/
+header {
+    background-color: #EAC926;
+}
+.logo {
+    width: 40%;
+    margin: 15px;
+}
 
-main{
+.buscar_input {
+    margin: 15px;
+}
+
+.hand_comprarTarjeta {
+    text-align: center;
+}
+
+.nav_principal {
+    display: none;
+}
+
+.burger-menu {
+    text-align: center;
+    margin: 10px;
+}
+
+.fa-bars {
+    font-size: 2em;
+    color: white;
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.banner_img {
+    display: block;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+
+/* -------- ESTILOS MAIN --------*/
+main {
     text-align: center;
     width: 90%;
-      
-
 }
+
 article{
     margin-bottom: 10px;
 }
@@ -62,3 +102,31 @@ header p{
 }
 
 
+
+/* -------- ESTILOS FOOTER --------*/
+.features_footer {
+    text-align: center;
+    background-color: white;
+}
+
+.features_footer .fas {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.features_footer h2 {
+    color: gray;
+}
+
+
+/* -------- MEDIA QUERY 361PX --------*/
+
+@media (min-width: 361px) {
+    /* .product_card {
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    } */
+}
+
+
+/* -------- MEDIA QUERY 769PX --------*/

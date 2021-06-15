@@ -12,11 +12,13 @@
 </head>
 <body>
     <header>
-        <img src="/images/logo-mercado-liebre.svg" alt="Logo" width="20%" />
+        <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" width="20%" />
         <br>
-        <input type="text" placeholder="Buscar productos, marcas"> <i class="fas fa-search"></i>
-        <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav>
+        <div class="buscar_input">
+            <input type="text" placeholder="Buscar productos, marcas"> <button><i class="fas fa-search"></i></button>
+        </div>
+        <p class="hand_comprarTarjeta"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        <nav class="nav_principal">
             <ul type="none">
             <li>Ofertas</li>
             <li>Tiendas Oficiales</li>
@@ -32,16 +34,14 @@
     <div class="burger-menu">
         <i class="fas fa-bars"></i>
         </div>
-
     <section>
-        <img src="/images/img-home-banner.jpg" alt="Banner" width="50%"/>
+        <img class="banner_img" src="/images/img-home-banner.jpg" alt="Banner" width="50%"/>
     </section>
 </header>
 <main>
     <section>
         <h1>Basado en tu última visita</h1>
-        <article>
-             
+        <article class="product_card">
             <img src="/images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
@@ -52,7 +52,7 @@
             </div>
                 
         </article>
-        <article>
+        <article class="product_card">
             <img src="/images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
@@ -63,7 +63,7 @@
             </div>
                 
         </article>
-        <article>
+        <article class="product_card">
             <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
@@ -74,7 +74,7 @@
             </div>
                 
         </article>
-        <article>
+        <article class="product_card">
             <img src="/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
@@ -88,7 +88,7 @@
     </section>
     <section>
         <h1>Ofertas</h1>
-        <article>
+        <article class="product_card">
             <img src="/images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
@@ -100,7 +100,7 @@
 
                
         </article>
-        <article>
+        <article class="product_card">
             <img src="/images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
@@ -111,7 +111,7 @@
             </div>
                
         </article>
-        <article>
+        <article class="product_card">
             <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
@@ -122,7 +122,7 @@
             </div>
                 
         </article>
-        <article>
+        <article class="product_card">
             <img src="/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
