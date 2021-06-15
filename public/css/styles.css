@@ -1,3 +1,20 @@
 body {
     background-color: lightgoldenrodyellow;
 }
+
+main{
+    text-align: center;
+    width: 90%;
+      
+
+}
+article{
+    margin-bottom: 10px;
+}
+
+.d-articulo{
+    border-top: 1px solid #ebebeb ;
+    padding: 15px;
+}
+
+
