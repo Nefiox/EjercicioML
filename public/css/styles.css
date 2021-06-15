@@ -6,17 +6,62 @@ body {
     background-color: lightgoldenrodyellow;
 }
 /* -------- ESTILOS HEADER --------*/
+header {
+    background-color: #EAC926;
+}
+.logo {
+    width: 40%;
+    margin: 15px;
+}
+
+.buscar_input {
+    margin: 15px;
+}
+
+.hand_comprarTarjeta {
+    text-align: center;
+}
+
 .nav_principal {
     display: none;
 }
 
-.fa-bars {
+.burger-menu {
     text-align: center;
+    margin: 10px;
+}
+
+.fa-bars {
     font-size: 2em;
     color: white;
-    background-color: blue;
+    background-color: #1259c3;
+    padding: 10px;
     border-radius: 5px;
 }
+
+.banner_img {
+    display: block;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+
+/* -------- ESTILOS MAIN --------*/
+main {
+    text-align: center;
+    width: 90%;
+}
+
+article{
+    margin-bottom: 10px;
+}
+
+.d-articulo{
+    border-top: 1px solid #ebebeb ;
+    padding: 15px;
+}
+
+
 
 /* -------- ESTILOS FOOTER --------*/
 .features_footer {
@@ -33,13 +78,6 @@ body {
 .features_footer h2 {
     color: gray;
 }
-
-
-/* 
-article > img {
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-} */
 
 
 /* -------- MEDIA QUERY 361PX --------*/
