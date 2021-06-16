@@ -91,8 +91,9 @@ header p{
     .d-articulo{
         display: block;
     }
-    nav{
-        display: block;
+    .nav_principal{
+        display: flex;
+        
 
     }
     .burger-menu{
