@@ -15,8 +15,10 @@ const PORT = 3000;
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => {
-    res.sendFile('/home.html', {root: 'views'})
+    res.sendFile('/home.html', {root: 'views'});
+    
 });
+app.get('/registro', (req, res) => res.sendFile('/register.html', {root: 'views'}));
 
 
 app.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`));

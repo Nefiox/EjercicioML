@@ -1,7 +1,17 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
 </head>
+
 <body>
     <header>
 
@@ -14,30 +24,52 @@
             <label for="usuario">Nombre de usuari@</label>
             <input type="text" name="usuario" id="usuario"required>
 
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+
             <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
             <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento"required>
 
             <label for="domicilio">Domicilio</label>
             <input type="text" name="domicilio" id= "domicilio"required>
 
-            <label for="perfil">Perfil del usuario</label>
-            <input type="radio" id="comprar" name="perfil" value="comprar">
-            <label for="comprar">Comprar</label>
-            <input type="radio" id="vender" name="perfil" value="vender">
-            <label for="vender">Vender</label>
+            <div>Perfil de usuario</div>
+            <section>
+                <input type="radio" id="comprar" name="perfil" value="comprar">
+                <label for="comprar">Comprar</label>
+                <input type="radio" id="vender" name="perfil" value="vender">
+                <label for="vender">Vender</label>
+
+            </section>
             
 
             <label>Categorías de interés</label>
-            <input type="checkbox" name="categoria-1" id="categoria-1" value="electro">
-            <label for="categoria-1">Electro</label>
-            <input type="checkbox" name="categoria-2" id="categoria-2" value="moda">
-            <label for="categoria-2">Moda</label>
-            <input type="checkbox" name="categoría-3" id="categoría-3" value="hogar">
-            <label for="categoria-3">Hogar</label>
-            <input type="checkbox" name="categoria-4" id="categoria-4" value="jugueteria">
-            <label for="categoria-4">Juguetería</label>
-            <input type="checkbox" name="categoria-5" id="categoria-5" value="vida-sana">
-            <label for="categoria-5">Vida Sana</label>
+            <section>
+                <div>
+                    <input type="checkbox" name="categoria-1" id="categoria-1" value="electro">
+                    <label for="categoria-1">Electro</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" name="categoria-2" id="categoria-2" value="moda">
+                    <label for="categoria-2">Moda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="categoría-3" id="categoría-3" value="hogar">
+                    <label for="categoria-3">Hogar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="categoria-4" id="categoria-4" value="jugueteria">
+                    <label for="categoria-4">Juguetería</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="categoria-5" id="categoria-5" value="vida-sana">
+                    <label for="categoria-5">Vida Sana</label>
+                </div>             
+                
+                
+            </section>
+            
 
             <label for="avatar">Foto de usuario</label>
             <input type="file" id="avatar" name="avatar" accept=".jpg">
