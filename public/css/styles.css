@@ -1,21 +1,36 @@
-body {
-    padding: 0;
-    margin: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;;
 }
+
+
+
 /* -------- ESTILOS HEADER --------*/
 header {
     background-color: #EAC926;
 }
+
+.initial_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     width: 40%;
     margin: 15px;
 }
 
 .buscar_input {
-    margin: 15px;
+    /* margin: 15px; */
+    width: 50%;
+}
+
+.buscar_input input {
+    width: 70%;
 }
 
 .hand_comprarTarjeta {
@@ -26,9 +41,15 @@ header {
     display: none;
 }
 
-.burger-menu {
+header p{
+    font-size: 15px;
     text-align: center;
-    margin: 10px;
+}
+
+.burger-menu{
+    text-align: center;
+    padding: 10px;
+    margin-top: 8px;
 }
 
 .fa-bars {
@@ -37,102 +58,118 @@ header {
     background-color: #1259c3;
     padding: 10px;
     border-radius: 5px;
+    display: inline;
+    text-align: center;
+}
+
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+ul a:hover {
+    text-decoration: underline;
 }
 
 .banner_img {
     display: block;
-    width: 100vw;
+    width: 100%;
     margin-top: 10px;
 }
-
-
-/* -------- ESTILOS MAIN --------*/
-main {
-    text-align: center;
-    width: 90%;
-}
-
-.product_card {
-    margin-bottom: 10px;
-    background-color: white;
-    text-align: start;
-}
-.product_card img {
-    width: 100%;
-}
-
-.d-articulo{
-    border-top: 1px solid #ebebeb ;
-    padding: 15px;
-}
-header p{
-    text-align: center;
-}
-.burger-menu{
-    background-color: #1259c3;
-    width: 20px;
-    
-    
-}
-
-@media (min-width: 361px){
-    .d-articulo{
-        display: none;
-    }
-    nav{
-        display: none;
-
-    }
-    .burger-menu{
-        display: block;
-    }
-}
-
-@media (min-width:761px){
-    article{
-        display: block;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .d-articulo{
-        display: block;
-    }
-    .nav_principal{
-        display: flex;
-        
-
-    }
-    .burger-menu{
-        display: none;
-    }
-
-}
-
-
 
 /* -------- ESTILOS FOOTER --------*/
 .features_footer {
     text-align: center;
     background-color: white;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 10px;
 }
 
 .features_footer .fas {
     font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 8px;
+}
+
+.feature {
     margin-bottom: 10px;
-    color: blue;
 }
 
-.features_footer h2 {
+.features_footer h3 {
     color: gray;
+    margin: 0;
 }
 
-
-/* -------- MEDIA QUERY 361PX --------*/
-
-@media (min-width: 361px) {
-    /* .product_card {
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
-    } */
+.features_footer p {
+    font-size: 12px;
+    margin: 0;
+    padding: 4px 8px;
 }
 
+.copyright {
+    font-size: 12px;
+    padding: 2rem 0;
+}
 
-/* -------- MEDIA QUERY 769PX --------*/
+/* -------- MEDIA QUERY 761PX --------*/
+@media (min-width:761px){
+    .burger-menu {
+        display: none;
+    }
+
+    .nav_principal {
+        display: block;
+        margin: 8px 0
+    }
+
+    .initial_header {
+        /* display: flex; */
+        flex-wrap: nowrap;
+    }
+
+    .hand_comprarTarjeta {
+        width: 40%;
+    }
+
+    .logo {
+        width: 30%;
+        max-width: 280px;
+    }
+
+    .buscar_input {
+        text-align: center;
+        margin: 15px;
+    }
+    .buscar_input input, .buscar_input i, .buscar_input button {
+        font-size: 1.2rem;
+    }
+
+    .nav_principal {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav_principal ul {
+        display: inline-flex;
+        padding: 0 12px;
+        
+    }
+
+    .nav_principal li {
+        margin: 0 6px;
+    }
+
+    .features_footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 8px;
+        width: 100%;
+    }
+    .feature {
+        width: calc(100%/3);
+    }
+}

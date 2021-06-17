@@ -1,0 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* ---------------------------- ESTILOS MAIN ---------------------------- */
+main {
+    display:block;
+    margin: 15px auto;
+    width: 90%;
+    
+}
+
+.tittle {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 18px;
+    display: inline;
+}
+
+.discount {
+    display: inline;
+    color: #39b54a;
+}
+
+.desc {
+    display: none;
+    color: #666;
+}
+
+.discount, .desc {
+    font-size: 16px;
+}
+
+
+.d-articulo .fas {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    background-color: white;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: relative;
+    right: -80%;
+    top: -30px;
+}
+
+.product_card {
+    margin-bottom: 10px;
+    background-color: white;
+    text-align: start;
+}
+.product_card img {
+    width: 100%;
+}
+
+.d-articulo{
+    border-top: 1px solid #ebebeb ;
+    padding: 15px;
+}
+
+
+
+/* -------- MEDIA QUERY 361PX --------*/
+@media (min-width: 361px){
+    section:not(h1) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .product_card {
+        width: 45%;
+
+    }
+
+    .desc {
+        display: block;
+    }
+
+    article {
+        display: block;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
+/* -------- MEDIA QUERY 761PX --------*/
+@media (min-width:761px){
+    .d-articulo{
+        display: block;
+    }
+
+    .product_card {
+        width: calc(90%/4);
+
+    }
+}

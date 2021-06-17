@@ -9,15 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="/css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" width="20%" />
-        <br>
-        <div class="buscar_input">
-            <input type="text" placeholder="Buscar productos, marcas"> <button><i class="fas fa-search"></i></button>
+        <div class="initial_header">
+            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" width="20%" />
+            <br>
+            <div class="buscar_input">
+                <input type="text" placeholder="Buscar productos, marcas"> <button><i class="fas fa-search"></i></button>
+            </div>
+            <p class="hand_comprarTarjeta"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
-        <p class="hand_comprarTarjeta"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
         <nav class="nav_principal">
             <ul type="none">
             <li>Ofertas</li>
@@ -26,8 +29,8 @@
             <li>Ayuda</li>
         </ul>
         <ul type="none">
-            <li>Creá tu cuenta <i class="far fa-id-card"></i></li>
-            <li>Ingresá <i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="/registro">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
             <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
         </ul>
     </nav>
@@ -37,17 +40,17 @@
     <section>
         <img class="banner_img" src="/images/img-home-banner.jpg" alt="Banner" width="50%"/>
     </section>
-</header>
+    </header>
 <main>
+    <h1 class="tittle">Basado en tu última visita</h1>
     <section>
-        <h1>Basado en tu última visita</h1>
         <article class="product_card">
             <img src="/images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$6.770</p>    
-                <p>40% off</p>
-                <h2>Cafetera Moulinex</h2>
+                <p class="price">$6.770</p>    
+                <p class="discount">40% off</p>
+                <h2 class="desc">Cafetera Moulinex</h2>
             </div>
                 
         </article>
@@ -55,9 +58,9 @@
             <img src="/images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$230.000</p>    
-                <p>20% off</p>
-                <h2>MacBook Pro 2019</h2>
+                <p class="price">$230.000</p>    
+                <p class="discount">20% off</p>
+                <h2 class="desc">MacBook Pro 2019</h2>
 
             </div>
                 
@@ -66,9 +69,9 @@
             <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$70.500</p>    
-                <p>10% off</p>
-                <h2>Samsung Galaxy S10</h2>
+                <p class="price">$70.500</p>    
+                <p class="discount">10% off</p>
+                <h2 class="desc">Samsung Galaxy S10</h2>
 
             </div>
                 
@@ -77,24 +80,22 @@
             <img src="/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$23.200</p>    
-                <p>5% off</p>
-                <h2>MacBook Pro 2019</h2>
-
+                <p class="price">$23.200</p>    
+                <p class="discount">5% off</p>
+                <h2 class="desc">MacBook Pro 2019</h2>
             </div>
-                
+    
         </article>
     </section>
+    <h1 class="tittle">Ofertas</h1>
     <section>
-        <h1>Ofertas</h1>
         <article class="product_card">
             <img src="/images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$6.770</p>    
-                <p>40% off</p>
-                <h2>Cafetera Moulinex</h2>
-
+                <p class="price">$6.770</p>    
+                <p class="discount">40% off</p>
+                <h2 class="desc">Cafetera Moulinex</h2>
             </div>
 
                
@@ -103,10 +104,9 @@
             <img src="/images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$230.000</p>    
-                <p>20% off</p>
-                <h2>MacBook Pro 2019</h2> 
-
+                <p class="price">$230.000</p>    
+                <p class="discount">20% off</p>
+                <h2 class="desc">MacBook Pro 2019</h2>
             </div>
                
         </article>
@@ -114,10 +114,9 @@
             <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$70.500</p>    
-                <p>10% off</p>
-                <h2>Samsung Galaxy S10</h2>
-
+                <p class="price">$70.500</p>    
+                <p class="discount">10% off</p>
+                <h2 class="desc">Samsung Galaxy S10</h2>
             </div>
                 
         </article>
@@ -125,38 +124,43 @@
             <img src="/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="30%"/>
             <div class="d-articulo">
                 <i class="fas fa-truck"></i>
-                <p>$23.200</p>    
-                <p>5% off</p>
-                <h2>SmartTv Samsung 43"</h2> 
-
+                <p class="price">$23.200</p>    
+                <p class="discount">5% off</p>
+                <h2 class="desc">SmartTv Samsung 43"</h2>
             </div>   
         </article>
     </section>
 </main>
-
     <footer class="features_footer">
-        <i class="fas fa-credit-card"></i>
-        <h2> Pagá con tarjeta o en efectivo </h2>
-        <p>
-            Con MercadoLiebreCash tenés cuotas sin
-            interés con tarjeta o efectivo en puntos de
-            pago. ¡Y siempre es seguro!
-        </p>
-        <i class="fas fa-gift"></i>
-        <h2> Envio gratis desde los $ 2.500 </h2>
-        <p>
-            Solo por estar registrado en MercadoLiebre
-            tenés envios gratis en miles de productos. Es
-            un beneficio de Mercado Puntos.
-        </p>
-        <i class="fas fa-user-shield"></i>
-        <h2> Seguridad de principio a fin </h2>
-        <p>
-            ¿No te gusta? ¡Devolvelo! En MercadoLiebre
-            no hay nada que no puedas hacer porque estás
-            siempre protegid@.
-        </p>
-        <div> Copyright 1999-2020 MercadoLiebre S.R.L. </div>
+
+            <div class="feature">
+                <i class="fas fa-credit-card"></i>
+            <h3> Pagá con tarjeta o en efectivo </h3>
+            <p>
+                Con MercadoLiebreCash tenés cuotas sin
+                interés con tarjeta o efectivo en puntos de
+                pago. ¡Y siempre es seguro!
+            </p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-gift"></i>
+            <h3> Envio gratis desde los $ 2.500 </h3>
+            <p>
+                Solo por estar registrado en MercadoLiebre
+                tenés envios gratis en miles de productos. Es
+                un beneficio de Mercado Puntos.
+            </p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-user-shield"></i>
+            <h3> Seguridad de principio a fin </h3>
+            <p>
+                ¿No te gusta? ¡Devolvelo! En MercadoLiebre
+                no hay nada que no puedas hacer porque estás
+                siempre protegid@.
+            </p>
+        </div>
+        <div class="copyright"> Copyright 1999-2020 MercadoLiebre S.R.L. </div>
     </footer>
 </body>
 </html>

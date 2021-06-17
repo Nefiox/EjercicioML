@@ -1,4 +1,49 @@
-form{
+body {
+    background-color: #ebebeb;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.input_info {
+    margin: 12px 0;
+    font-size: 1.2rem;
+    padding-left: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    min-height: 2.2rem;
+}
+
+.send_button {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    min-height: 2.2rem;
+}
+
+
+.send_button:hover {
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+@media (min-width:761px) {
+    main {
+        min-height: 270px;
+    }
 }
