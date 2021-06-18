@@ -111,3 +111,13 @@ main {
             display: block;
     }
 }
+
+
+/*cuando los usuarios le pasen el mouse por arriba, se
+visualice la sombra de la tarjeta de producto*/
+article{
+    transition: box-shadow infinite;
+}
+article:hover{
+    box-shadow: 8px 8px 5px grey;
+    }
