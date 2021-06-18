@@ -39,6 +39,7 @@ form {
 
 .send_button:hover {
     border: 1px solid rgb(0, 0, 0);
+    background-color: #0022AA;
     cursor: pointer;
 }
 
