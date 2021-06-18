@@ -58,6 +58,7 @@ main {
     background-color: white;
     text-align: start;
 }
+
 .product_card img {
     width: 100%;
 }
@@ -88,6 +89,9 @@ main {
 
     article {
         display: block;
+    }
+
+    article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
@@ -96,12 +100,15 @@ main {
 /* -------- MEDIA QUERY 761PX --------*/
 @media (min-width:761px){
     .d-articulo{
-        display: block;
+        display: none;
     }
 
     .product_card {
         width: calc(90%/4);
+    }
 
+    .product_card img:hover + .d-articulo{
+            display: block;
     }
 }
 
