@@ -30,13 +30,12 @@ main {
 
 .desc {
     display: none;
-    color: #666;
+    color: rgb(102, 102, 102);
 }
 
 .discount, .desc {
     font-size: 16px;
 }
-
 
 .d-articulo .fas {
     display: block;
@@ -68,8 +67,6 @@ main {
     padding: 15px;
 }
 
-
-
 /* -------- MEDIA QUERY 361PX --------*/
 @media (min-width: 361px){
     section:not(h1) {
@@ -96,7 +93,6 @@ main {
     }
 }
 
-
 /* -------- MEDIA QUERY 761PX --------*/
 @media (min-width:761px){
     .d-articulo{
@@ -112,7 +108,6 @@ main {
     }
 }
 
-
 /*cuando los usuarios le pasen el mouse por arriba, se
 visualice la sombra de la tarjeta de producto*/
 article{
@@ -121,4 +116,3 @@ article{
 article:hover{
     box-shadow: 8px 8px 5px grey;
     }
-

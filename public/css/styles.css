@@ -30,6 +30,7 @@ header {
 }
 
 .buscar_input input {
+    padding-left: 8px;
     width: 70%;
 }
 
