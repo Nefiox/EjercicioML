@@ -2,6 +2,13 @@ body {
     background-color: #ebebeb;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -21,6 +28,19 @@ label {
     border: 1px solid rgba(0, 0, 0, 0.18);
     border-radius: 5px;
     min-height: 2.2rem;
+}
+
+
+h3, .radios_butones {
+    margin: 8px 0;
+}
+
+.cate_interes {
+    margin: 15px 0;
+}
+
+.foto_user {
+    margin: 12px 0;
 }
 
 .send_button {
@@ -47,4 +67,11 @@ label {
 .send_button:hover, .reset_button:hover {
     border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
+}
+
+
+@media (min-width:761px) {
+    main {
+        min-height: 270px;
+    }
 }

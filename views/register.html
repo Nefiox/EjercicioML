@@ -44,67 +44,58 @@
     </header>
     <main>
         <form action="/registro" method="POST">
-            <label for="nombre">Nombre y apellido</label>
-            <input class="input_info" type="text" name="nombre" id="nombre" required minlength="2">
+            
+            <input class="input_info" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required minlength="2">
 
-            <label for="usuario">Nombre de usuari@</label>
-            <input class="input_info" type="text" name="usuario" id="usuario" required minlength="4">
+            <input class="input_info" type="text" name="usuario" id="usuario" placeholder="Nombre de usuari@" required minlength="4">
 
-            <label for="email">E-mail</label>
-            <input class="input_info" type="email" name="email" id="email" required>
+            
+            <input class="input_info" type="email" name="email" id="email" placeholder="E-mail" required>
 
-            <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
+            <h3>Fecha de nacimiento</h3>
             <input class="input_info" type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento" required>
 
-            <label for="domicilio">Domicilio</label>
-            <input class="input_info" type="text" name="domicilio" id= "domicilio" required minlength="6">
+            <input class="input_info" type="text" name="domicilio" id= "domicilio" placeholder="Domicilio" required minlength="6">
 
-            <div>Perfil de usuario</div>
-            <section>
+            <h3>Perfil de usuario</h3>
+            <section class="radios_butones">
                 <input type="radio" id="comprar" name="perfil" value="comprar">
                 <label for="comprar">Comprar</label>
                 <input type="radio" id="vender" name="perfil" value="vender">
                 <label for="vender">Vender</label>
-
             </section>
             
 
-            <label>Categorías de interés</label>
-            <section>
-                <div>
+            <h3>Categorías de interés</h3>
+
+                <div class="cate_interes">
                     <input type="checkbox" name="categoria-1" id="categoria-1" value="electro">
                     <label for="categoria-1">Electro</label>
 
                 </div>
-                <div>
+                <div class="cate_interes">
                     <input type="checkbox" name="categoria-2" id="categoria-2" value="moda">
                     <label for="categoria-2">Moda</label>
                 </div>
-                <div>
+                <div class="cate_interes">
                     <input type="checkbox" name="categoría-3" id="categoría-3" value="hogar">
                     <label for="categoria-3">Hogar</label>
                 </div>
-                <div>
+                <div class="cate_interes">
                     <input type="checkbox" name="categoria-4" id="categoria-4" value="jugueteria">
                     <label for="categoria-4">Juguetería</label>
                 </div>
-                <div>
+                <div class="cate_interes">
                     <input type="checkbox" name="categoria-5" id="categoria-5" value="vida-sana">
                     <label for="categoria-5">Vida Sana</label>
                 </div>             
-                
-                
-            </section>
+
+            <h3>Foto de usuario</h3>
+            <input class="foto_user" type="file" id="avatar" name="avatar" accept=".jpg">
             
-
-            <label for="avatar">Foto de usuario</label>
-            <input type="file" id="avatar" name="avatar" accept=".jpg">
-
-            <label for="contraseña">Contraseña</label>
-            <input class="input_info" type="password" id="contraseña" name="contraseña" required minlength="6">
-
-            <label for="c-contraseña">Confirmar contraseña</label>
-            <input class="input_info" type="password" id="c-contraseña" name="c-contraseña" required minlength="6">
+            <input class="input_info" type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required minlength="6">
+            
+            <input class="input_info" type="password" id="c-contraseña" name="c-contraseña" placeholder="Confirmar contraseña" required minlength="6">
 
             <input class="send_button" type="submit" id="enviar" name="enviar">
 
