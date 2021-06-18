@@ -169,7 +169,25 @@ ul a:hover {
         padding: 10px 8px;
         width: 100%;
     }
+    
     .feature {
         width: calc(100%/3);
     }
+
+    .fa-credit-card, .fa-gift, .fa-user-shield{
+        transition: color infinite;
+
+    }
+
+    .fa-credit-card:hover{
+        color: black;
+    }
+    .fa-gift:hover{
+        color: black;
+    }
+    .fa-user-shield:hover{
+        color: black;
+
+    }
+
 }
